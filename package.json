@@ -13,7 +13,12 @@
     "url": "https://github.com/dasrick/tox-mm-ui/issues"
   },
   "homepage": "https://github.com/dasrick/tox-mm-ui#readme",
+  "dependencies": {
+    "express": "^4.13.3"
+  },
   "scripts": {
+    "prebuild": "mkdir -p web/css/ web/js/",
+    "start": "node web.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
