@@ -1,0 +1,19 @@
+{
+  "name": "tox-mm-ui",
+  "version": "0.0.0",
+  "description": "Foo Bar",
+  "main": "web.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dasrick/tox-mm-ui.git"
+  },
+  "author": "Enrico Hoffmann <dasrick@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dasrick/tox-mm-ui/issues"
+  },
+  "homepage": "https://github.com/dasrick/tox-mm-ui#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
