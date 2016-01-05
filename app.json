@@ -1,0 +1,7 @@
+{
+  "name":"tox-mm-ui",
+  "description":"Template stuff of a mediathek for MovingIMAGE VideoManager of Messe München",
+  "scripts":{},
+  "env":{},
+  "addons":[]
+}
