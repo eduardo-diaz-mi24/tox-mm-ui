@@ -1,9 +1,37 @@
 .social-recommendation {
+  padding: (@grid-gutter-width * 1.5) 0 @grid-gutter-width;
+  h5 {
+    margin: 0;
+    font-weight: normal;
+  }
   .nav {
     font-size: 2em;
-
+    > li {
+      padding: 0 (@grid-gutter-width / 4);
+      &:first-child {
+        padding-left: 0;
+      }
+      &:last-child {
+        padding-right: 0;
+      }
+    }
     i[class*="fa-facebook"] {
-      color: #00f;
+      color: #3b5999;
+    }
+    i[class*="fa-twitter"] {
+      color: #05aceb;
+    }
+    i[class*="fa-google-plus"] {
+      color: #d14836;
+    }
+    i[class*="fa-linkedin"] {
+      color: #0080b1;
+    }
+    i[class*="fa-xing"] {
+      color: #006464;
+    }
+    i[class*="fa-envelope"] {
+      color: #6a91ce;
     }
   }
 }
