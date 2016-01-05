@@ -19,14 +19,24 @@
     "david": "^7.0.0",
     "express": "^4.13.3",
     "font-awesome": "^4.5.0",
+    "jquery": "^2.1.4",
+    "jscs": "^2.8.0",
+    "jshint": "^2.8.0",
+    "jshint-stylish": "^2.1.0",
+    "json-loader": "^0.5.4",
     "less": "^2.5.3",
-    "less-plugin-autoprefix": "^1.5.1"
+    "less-plugin-autoprefix": "^1.5.1",
+    "uglify-js": "^2.6.1",
+    "webpack": "^1.12.9"
   },
   "scripts": {
     "postinstall": "npm run build",
     "prebuild": "mkdir -p web/css/ web/js/",
-    "build": "npm run build:css",
+    "build": "npm run build:css && npm run jscs && npm run jshint && npm run build:js",
     "build:css": "lessc --autoprefix='last 2 versions,ie 9' src/media/less/style.less web/css/style.css && cleancss --source-map -o web/css/style.min.css web/css/style.css",
+    "build:js": "webpack --config webpack.config.js",
+    "jscs": "jscs ./src/media/js",
+    "jshint": "jshint ./src/media/js --reporter node_modules/jshint-stylish/index.js",
     "start": "node web.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
