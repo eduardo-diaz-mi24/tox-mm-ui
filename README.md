@@ -3,8 +3,8 @@
 [![GitHub version](https://badge.fury.io/gh/dasrick%2Ftox-mm-ui.svg)](https://badge.fury.io/gh/dasrick%2Ftox-mm-ui)
 [![dependency Status](https://david-dm.org/dasrick/tox-mm-ui/status.svg)](https://david-dm.org/dasrick/tox-mm-ui#info=dependencies)
 [![devDependency Status](https://david-dm.org/dasrick/tox-mm-ui/dev-status.svg)](https://david-dm.org/dasrick/tox-mm-ui#info=devDependencies)
-[![Heroku Badge](http://img.shields.io/badge/staging%20to-Heroku-7056bf.svg)](https://tox-ccc-qa.herokuapp.com)
-[![Heroku Badge](http://img.shields.io/badge/production%20to-Heroku-7056bf.svg)](https://tox-ccc.herokuapp.com)
+[![Heroku Badge](http://img.shields.io/badge/staging%20to-Heroku-7056bf.svg)](https://tox-mm-qa.herokuapp.com)
+[![Heroku Badge](http://img.shields.io/badge/production%20to-Heroku-7056bf.svg)](https://tox-mm.herokuapp.com)
 
 UI for Messe München
 
