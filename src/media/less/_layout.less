@@ -1,0 +1,20 @@
+// tags ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  //background: @body-bg url("../img/bg.png") repeat-x;
+  background: @body-bg;
+  > .container {
+    background-color: #fff;
+  }
+}
+
+// classes /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+.full-width-bars-right {
+  margin-right: (600rem + @grid-gutter-width / 2) * -1;
+  border-right: 600rem solid @mm-grey-trans;
+  background-color: @mm-grey-trans;
+}
+

@@ -1,0 +1,51 @@
+.nav-horizontal {
+  > li {
+    float: left;
+
+    border-right: 1px solid @mm-grey;
+    padding: 0 10px;
+    &:last-child {
+      border-right: none;
+      padding-right: 0;
+    }
+    &:first-child {
+      padding-left: 0;
+    }
+
+    & + li {
+      margin-left: 0;
+    }
+    > a {
+      padding: 0;
+    }
+  }
+}
+
+.nav-grey {
+  > li {
+    > a {
+      font-size: 12px;
+      color: @mm-grey;
+      &:hover,
+      &:focus {
+        color: @mm-grey;
+        text-decoration: underline;
+      }
+      &:active {
+        color: @mm-active;
+      }
+    }
+    &.active {
+      > a {
+        color: @mm-active;
+        &:hover,
+        &:focus {
+          color: @mm-active;
+        }
+        &:active {
+          color: @mm-active;
+        }
+      }
+    }
+  }
+}
