@@ -27,7 +27,44 @@ header {
       right: 0;
       a {
         padding-top: 5px;
+        color: #ffffff;
+        background-color: @mm-grey-light-trans;
+        &.active {
+          background-color: @mm-blue;
+        }
+        &:hover, &:focus {
+          background-color: @mm-blue;
+          text-decoration: underline;
+        }
+      }
+      > li {
+        margin-right: 1px;
+        > a {
+          text-transform: uppercase;
+        }
+        @media (min-width: @screen-md-min) {
+          width: 20.75%;
+          box-sizing: border-box;
+          &:last-child {
+            margin-right: 0;
+            width: 16.5%;
+          }
+        }
+      }
+      .dropdown-menu {
+        padding: 0;
+        a {
+          background-color: @mm-blue;
+          border-top: 1px solid @mm-blue-dark;
+          padding: 9px 10px 10px;
+          &:hover, &:focus {
+            background-color: @gray-light;
+            color: #000000;
+            text-decoration: none;
+          }
+        }
       }
     }
   }
 }
+
