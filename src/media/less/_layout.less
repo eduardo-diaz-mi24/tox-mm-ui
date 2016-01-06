@@ -22,14 +22,15 @@ body {
 */
 .full-width-bars-right {
   position: relative;
-  background-color: @mm-grey-light-trans;
-  &:after {
-    content: " ";
-    position: absolute;
-    height: 100%;
-    top: 0;
-    left: 100%;
-    background-color: @mm-grey-light-trans;
-    width: 580rem;
+  @media (min-width: @screen-sm-min) {
+    &:after {
+      content: " ";
+      position: absolute;
+      height: 100%;
+      top: 0;
+      left: 100%;
+      background-color: @mm-grey-light-trans;
+      width: 580rem;
+    }
   }
 }
