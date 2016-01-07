@@ -15,6 +15,9 @@ header {
 
   .banner {
     position: relative;
+    @media (max-width: @screen-xs-max) {
+      margin-top: 10px;
+    }
     .mm-search,
     .mm-logo,
     .nav {
@@ -78,11 +81,34 @@ header {
       }
       > li {
         margin-right: 1px;
+        .fa-angle-right {
+          .responsive-invisibility()
+        }
+        @media (max-width: @screen-xs-max) {
+          .fa-angle-down {
+            .responsive-invisibility()
+          }
+
+          .fa-angle-right {
+            .responsive-visibility()
+          }
+
+          &.open {
+            .fa-angle-down {
+              .responsive-visibility()
+            }
+            .fa-angle-right {
+              .responsive-invisibility()
+            }
+          }
+        }
         > a {
           background-color: @mm-grey-light-trans;
           text-transform: uppercase;
           @media (max-width: @screen-xs-max) {
             background-color: @mm-blue;
+            border-top: 1px solid @mm-blue-dark;
+            padding-top: 4px;
             &:hover {
               background-color: @gray-light;
             }
@@ -112,6 +138,8 @@ header {
       }
       .dropdown-menu {
         padding: 0;
+        border: 0;
+        min-width: 100%;
         li {
           a {
             background-color: @mm-blue;
