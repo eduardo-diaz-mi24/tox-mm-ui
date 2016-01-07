@@ -32,7 +32,16 @@
                 <img src="img/logo_messe_muenchen_white.png" title="Messe München">
             </div>
             <div class="visible-xs text-right xs-nav-header"><i class="fa fa-bars"></i></div>
-            <div class="mm-search">search</div>
+            <div class="mm-search">
+                <form method="post" action="/what/ever/you/want">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Ihr Suchbegriff" value="" name="searchTerm">
+                        <span class="input-group-btn">
+                           <button class="btn btn-default fa fa-search" type="submit"></button>
+                        </span>
+                    </div>
+                </form>
+            </div>
             <div class="nav navigation-wrapper">
                 <ul class="nav navbar-nav" role="navigation">
                     <li><a class="active" href="#">Unternehmen</a></li>
