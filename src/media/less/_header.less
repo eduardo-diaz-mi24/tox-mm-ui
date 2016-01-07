@@ -2,6 +2,15 @@ header {
   .header-nav-top {
     height: 50px; // TODO maybe into vars
     padding-top: 17px; // TODO maybe into vars
+    .nav > li.active > a {
+      font-weight: bold;
+    }
+    .nav-languages {
+      font-size: 11px;
+    }
+    .nav-areas {
+      font-size: 12px;
+    }
   }
 
   .banner {
@@ -11,23 +20,120 @@ header {
     .nav {
       position: absolute;
       color: #f600f6; // özi like it
+      z-index: 5;
     }
     .mm-search {
       top: 10px;
       left: 10px;
     }
     .mm-logo {
-      top: 10px;
-      right: 10px;
+      top: 21px;
+      right: 35px;
+    }
+    .xs-nav-header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 35px;
+      width: 100%;
+      background-color: @mm-grey-light-trans;
+      z-index: 10;
+      i {
+        color: #ffffff;
+        font-size: 21px;
+        padding: 7px 10px;
+        &.open {
+          background-color: @mm-blue;
+        }
+      }
     }
     .nav {
       min-height: 40px;
       bottom: 0;
       left: 0;
       right: 0;
+      @media (max-width: @screen-xs-max) {
+        bottom: inherit;
+        margin: 0;
+        &.navigation-wrapper {
+          top: 35px;
+          right: auto;
+          width: 100%;
+          display: none;
+          &.open {
+            display: block;
+          }
+        }
+      }
       a {
         padding-top: 5px;
+        color: #ffffff;
+        &.active {
+          background-color: @mm-blue;
+        }
+        &:hover, &:focus {
+          background-color: @mm-blue;
+          text-decoration: underline;
+        }
+      }
+      > li {
+        margin-right: 1px;
+        > a {
+          background-color: @mm-grey-light-trans;
+          text-transform: uppercase;
+          @media (max-width: @screen-xs-max) {
+            background-color: @mm-blue;
+            &:hover {
+              background-color: @gray-light;
+            }
+          }
+        }
+
+        &:hover, &:focus {
+          > a {
+            background-color: @mm-blue;
+            text-decoration: underline;
+          }
+          @media (min-width: @screen-sm-min) {
+            .dropdown-menu {
+              .responsive-visibility();
+            }
+          }
+        }
+
+        @media (min-width: @screen-md-min) {
+          width: 20.75%;
+          box-sizing: border-box;
+          &:last-child {
+            margin-right: 0;
+            width: 16.5%;
+          }
+        }
+      }
+      .dropdown-menu {
+        min-width: 100%;
+        padding: 0;
+        li {
+          a {
+            background-color: @mm-blue;
+            border-top: 1px solid @mm-blue-dark;
+            padding: 9px 10px 10px;
+            white-space: normal;
+            @media (min-width: @screen-sm-min) {
+              min-width: 200%;
+            }
+            &:hover, &:focus {
+              background-color: @gray-light;
+              color: #000000;
+              text-decoration: none;
+            }
+            @media (max-width: @screen-xs-max) {
+              padding-left: 25px;
+            }
+          }
+        }
       }
     }
   }
 }
+
