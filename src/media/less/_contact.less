@@ -1,0 +1,52 @@
+.contact {
+  font-size: 12px;
+  .contact-header {
+    background-color: @gray-dark;
+    padding: (@grid-gutter-width / 2);
+    h3 {
+      font-weight: bold;
+      font-size: 16px;
+      color: @mm-white;
+      margin: 0 0 5px 0;
+    }
+    p {
+      margin-bottom: 0;
+    }
+  }
+  .contact-body {
+    padding: (@grid-gutter-width / 2);
+    background-color: @gray-light;
+    .vcard {
+      .tel, .fax {
+        font-weight: bold;
+      }
+    }
+  }
+  .contact-footer {
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      line-height: 24px;
+      li {
+        color: @mm-white;
+        background-color: @gray-dark;
+        padding: 0 (@grid-gutter-width / 2);
+        margin-bottom: 1px;
+        a {
+          color: @mm-white;
+          &:hover {
+            color: @mm-white;
+            text-decoration: none;
+          }
+        }
+        &:hover {
+          background-color: @mm-grey-dark;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
