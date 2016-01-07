@@ -29,6 +29,31 @@ header {
       top: 73px;
       left: 35px;
       width: 312px;
+      @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+        top: 37px;
+        left: 17px;
+      }
+      @media (max-width: @screen-xs-max) {
+        top: 35px;
+        left: 0;
+        display: none;
+        background-color: @mm-blue;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 5px 10px;
+        &.open {
+          display: block;
+        }
+        input.form-control {
+          border-color: @gray-lighter;
+          background-color: @gray-lighter;
+        }
+        button.btn-default {
+          background-color: @gray-lighter;
+          border-color: @gray-lighter;;
+          color: @gray;
+        }
+      }
       .form-control, .btn {
         padding: 4px 8px;
       }
@@ -74,7 +99,7 @@ header {
         bottom: inherit;
         margin: 0;
         &.navigation-wrapper {
-          top: 35px;
+          top: 70px;
           right: auto;
           width: 100%;
           display: none;
