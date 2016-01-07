@@ -1,0 +1,32 @@
+.jumbotron {
+  padding: @grid-gutter-width;
+  margin-bottom: (@grid-gutter-width);
+  background-color: @gray-light;
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  p {
+    font-size: 14px;
+    line-height: 2em;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: @screen-sm-min) {
+  .container .jumbotron {
+    padding-left: @grid-gutter-width;
+    padding-right: @grid-gutter-width;
+  }
+}
+
+@media (min-width: @screen-md-min) {
+}
+
+@media (min-width: @screen-lg-min) {
+}
