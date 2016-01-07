@@ -15,9 +15,6 @@ header {
 
   .banner {
     position: relative;
-    @media (max-width: @screen-xs-max) {
-      margin-top: 10px;
-    }
     .mm-search,
     .mm-logo,
     .nav {
@@ -29,31 +26,6 @@ header {
       top: 73px;
       left: 35px;
       width: 312px;
-      @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
-        top: 37px;
-        left: 17px;
-      }
-      @media (max-width: @screen-xs-max) {
-        top: 35px;
-        left: 0;
-        display: none;
-        background-color: @mm-blue;
-        width: 100%;
-        box-sizing: border-box;
-        padding: 5px 10px;
-        &.open {
-          display: block;
-        }
-        input.form-control {
-          border-color: @gray-lighter;
-          background-color: @gray-lighter;
-        }
-        button.btn-default {
-          background-color: @gray-lighter;
-          border-color: @gray-lighter;;
-          color: @gray;
-        }
-      }
       .form-control, .btn {
         padding: 4px 8px;
       }
@@ -95,19 +67,6 @@ header {
       bottom: 0;
       left: 0;
       right: 0;
-      @media (max-width: @screen-xs-max) {
-        bottom: inherit;
-        margin: 0;
-        &.navigation-wrapper {
-          top: 70px;
-          right: auto;
-          width: 100%;
-          display: none;
-          &.open {
-            display: block;
-          }
-        }
-      }
       a {
         padding-top: 5px;
         color: #ffffff;
@@ -124,66 +83,16 @@ header {
         .fa-angle-right {
           .responsive-invisibility()
         }
-        @media (max-width: @screen-xs-max) {
-          .fa-angle-down {
-            .responsive-invisibility()
-          }
-
-          .fa-angle-right {
-            .responsive-visibility()
-          }
-
-          &.open {
-            .fa-angle-down {
-              .responsive-visibility()
-            }
-            .fa-angle-right {
-              .responsive-invisibility()
-            }
-          }
-        }
         > a {
           margin-right: 1px;
           background-color: @mm-grey-light-trans;
           text-transform: uppercase;
-          @media (max-width: @screen-xs-max) {
-            background-color: @mm-blue;
-            border-top: 1px solid @mm-blue-dark;
-            padding-top: 4px;
-            &:hover {
-              background-color: @gray-light;
-            }
-          }
         }
 
         &:hover, &:focus {
           > a {
             background-color: @mm-blue;
             text-decoration: underline;
-          }
-          @media (min-width: @screen-sm-min) {
-            .dropdown-menu {
-              .responsive-visibility();
-            }
-          }
-        }
-        @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
-          width: 25%;
-          &:nth-child(4) {
-            a {
-              width: 100%;
-              margin-right: 0;
-            }
-          }
-        }
-        @media (min-width: @screen-md-min) {
-          width: 20.75%;
-          &:last-child {
-            width: 17%;
-            a {
-              margin-right: 0;
-              width: 100%;
-            }
           }
         }
       }
@@ -204,6 +113,126 @@ header {
             }
             @media (max-width: @screen-xs-max) {
               padding-left: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: @screen-xs-max) {
+  header {
+    .banner {
+      margin-top: 10px;
+      .mm-search {
+        top: 35px;
+        left: 0;
+        display: none;
+        background-color: @mm-blue;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 5px 10px;
+        &.open {
+          display: block;
+        }
+        input.form-control {
+          border-color: @gray-lighter;
+          background-color: @gray-lighter;
+        }
+        button.btn-default {
+          background-color: @gray-lighter;
+          border-color: @gray-lighter;;
+          color: @gray;
+        }
+      }
+      .nav {
+        bottom: inherit;
+        margin: 0;
+        &.navigation-wrapper {
+          top: 70px;
+          right: auto;
+          width: 100%;
+          display: none;
+          &.open {
+            display: block;
+          }
+        }
+        > li {
+          .fa-angle-down {
+            .responsive-invisibility()
+          }
+
+          .fa-angle-right {
+            .responsive-visibility()
+          }
+
+          &.open {
+            .fa-angle-down {
+              .responsive-visibility()
+            }
+            .fa-angle-right {
+              .responsive-invisibility()
+            }
+          }
+          > a {
+            background-color: @mm-blue;
+            border-top: 1px solid @mm-blue-dark;
+            padding-top: 4px;
+            &:hover {
+              background-color: @gray-light;
+              color: #000000;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+  header {
+    .banner {
+      .mm-search {
+        top: 37px;
+        left: 17px;
+      }
+      .nav {
+        > li {
+          width: 25%;
+          &:nth-child(4) {
+            a {
+              width: 100%;
+              margin-right: 0;
+            }
+          }
+          &:hover, &:focus {
+            .dropdown-menu {
+              .responsive-visibility();
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: @screen-md-min) {
+  header {
+    .banner {
+      .nav {
+        > li {
+          width: 20.75%;
+          &:last-child {
+            width: 17%;
+            a {
+              margin-right: 0;
+              width: 100%;
+            }
+          }
+          &:hover, &:focus {
+            .dropdown-menu {
+              .responsive-visibility();
             }
           }
         }
