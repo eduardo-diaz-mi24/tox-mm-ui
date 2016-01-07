@@ -80,7 +80,7 @@ header {
         }
       }
       > li {
-        margin-right: 1px;
+        box-sizing: border-box;
         .fa-angle-right {
           .responsive-invisibility()
         }
@@ -103,6 +103,7 @@ header {
           }
         }
         > a {
+          margin-right: 1px;
           background-color: @mm-grey-light-trans;
           text-transform: uppercase;
           @media (max-width: @screen-xs-max) {
@@ -126,13 +127,22 @@ header {
             }
           }
         }
-
+        @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+          width: 25%;
+          &:nth-child(4) {
+            a {
+              width: 100%;
+              margin-right: 0;
+            }
+          }
+        }
         @media (min-width: @screen-md-min) {
           width: 20.75%;
-          box-sizing: border-box;
           &:last-child {
-            margin-right: 0;
             width: 16.5%;
+            a {
+              margin-right: 0;
+            }
           }
         }
       }
