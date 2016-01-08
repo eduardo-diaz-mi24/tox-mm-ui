@@ -5,7 +5,7 @@ console.log('scripts loaded ...');
 
 $(document).ready(function () {
     $('.banner .fa-bars').click(function () {
-        $(this).add('.navigation-wrapper, .mm-search').toggleClass('open');
+        $(this).add('.mm-nav, .mm-search').toggleClass('open');
     });
 });
 
