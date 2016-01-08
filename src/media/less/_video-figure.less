@@ -5,6 +5,9 @@ figure.video {
   > a {
     display: block;
     position: relative;
+    img.img-responsive {
+      width: 100%;
+    }
     .play-button {
       background: transparent url("/img/bigplay-normal.png") no-repeat scroll center center;
       background-size: 50px;
@@ -44,24 +47,5 @@ figure.video {
     font-size: 14px;
     line-height: 14px;
     padding: 0 0 9px 9px;
-  }
-}
-
-@media (min-width: @screen-sm-min) {
-  figure.video {
-    width: 239px;
-    img {
-      width: 221px;
-      height: 119px;
-    }
-  }
-}
-
-@media (max-width: @screen-xs-max) {
-  figure.video {
-    width: auto;
-    .img-responsive {
-      width: 100%;
-    }
   }
 }
