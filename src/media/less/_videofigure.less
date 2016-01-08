@@ -1,0 +1,67 @@
+figure.video {
+  background-color: @gray-light;
+  padding: 9px;
+  position: relative;
+  > a {
+    display: block;
+    position: relative;
+    .play-button {
+      background: transparent url("/img/bigplay-normal.png") no-repeat scroll center center;
+      background-size: 50px;
+      height: 50px;
+      width: 50px;
+      top: 50%;
+      left: 50%;
+      margin-left: -25px;
+      margin-top: -25px;
+      position: absolute;
+    }
+
+  }
+
+  > div {
+    background-color: @gray-lighter;
+    border-left: 1px solid #eaeaea;
+    border-right: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+  }
+  h3 {
+    line-height: 20px;
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding: 5px 9px;
+    overflow: hidden;
+    height: 45px;
+    color: @text-color;
+    cursor: pointer;
+    &:hover, :focus, :visited {
+      color: @text-color;
+      text-decoration: none;
+    }
+  }
+  time, .views {
+    font-size: 14px;
+    line-height: 14px;
+    padding: 0 0 9px 9px;
+  }
+}
+
+@media (min-width: @screen-sm-min) {
+  figure.video {
+    width: 239px;
+    img {
+      width: 221px;
+      height: 119px;
+    }
+  }
+}
+
+@media (max-width: @screen-xs-max) {
+  figure.video {
+    width: auto;
+    .img-responsive {
+      width: 100%;
+    }
+  }
+}
