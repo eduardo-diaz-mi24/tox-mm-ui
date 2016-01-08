@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Messe München - overview</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+
+    <header>
+        <div class="hidden-xs header-nav-top">
+            <div class="row">
+                <div class="col-xs-12 col-sm-3">
+                    <ul class="nav nav-horizontal nav-grey nav-languages">
+                        <li class="active"><a href="#">Deutsch</a></li>
+                        <li><a href="#">English</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-9">
+                    <ul class="hidden-sm nav nav-horizontal nav-grey nav-areas pull-right">
+                        <li><a href="#">Presse Downloadbereich</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="banner">
+            <img class="img-responsive" src="img/header_banner.jpg">
+            <div class="mm-logo">
+                <img src="img/logo_messe_muenchen_white.png" title="Messe München">
+            </div>
+            <div class="visible-xs text-right xs-nav-header"><i class="fa fa-bars"></i></div>
+            <div class="mm-search">
+                <form method="post" action="/what/ever/you/want">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Ihr Suchbegriff" value="" name="searchTerm">
+                        <span class="input-group-btn">
+                           <button class="btn btn-default fa fa-search" type="submit"></button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+            <div class="mm-nav">
+                <ul class="nav navbar-nav" role="navigation">
+                    <li><a class="active" href="#">Unternehmen</a></li>
+                    <li><a href="#">Verstaltungen</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Themen<i class="pull-right fa fa-angle-right"></i><i class="pull-right fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Channel 1</a></li>
+                            <li><a href="#">Channel 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Karriere</a></li>
+                    <li class="hidden-xd hidden-sm full-width-bars-right"><a href="#">Presse</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+
+    </header>
+
+    <main>
+        <div class="row">
+            <div class="col-sm-12 col-md-9">
+                <section class="detailed-video">
+                    <div class="player clearfix">
+                        <div mi24-video-player video-id="5fP1ak-qHewjWApFPcQPvh" player-id="BCtEJVehoSSnNCkqCqFAvb" config-type="vmpro" flash-path="//e.video-cdn.net/v2/" api-url="//d.video-cdn.net/play"></div>
+                        <script src="//e.video-cdn.net/v2/embed.js"></script>
+                    </div>
+                    <div class="actions text-right clearfix">
+                        <div class="social-recommendation pull-left">
+                            <ul class="nav nav-horizontal">
+                                <li><a href="#"><i class="fa fa-lg fa-facebook-square"></i></a></li>
+                                <li><a href="#"><i class="fa fa-lg fa-twitter-square"></i></a></li>
+                                <li><a href="#"><i class="fa fa-lg fa-google-plus-square"></i></a></li>
+                                <li><a href="#"><i class="fa fa-lg fa-linkedin-square"></i></a></li>
+                                <li><a href="#"><i class="fa fa-lg fa-xing-square"></i></a></li>
+                                <li><a href="#"><i class="fa fa-lg fa-envelope-square"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="embedding visible-md visible-lg pull-left">
+                            <a class="bookmark" rel="sidebar"
+                               href="#"
+                               title="{{ video.title }}">Bookmark</a>
+                            <div class="bookmark-message hidden">
+                                <div class="message-text text-center">PRESS CTRL +D UM IN DIE SEITE LESEZEICHEN EINZUFÜGEN</div>
+                                <div class="text-center">
+                                    <i class="fa fa-close"></i>
+                                </div>
+                            </div>
+                            <span class="embed-button">Einbetten</span>
+                        </div>
+                        <span class="loged-actions visible-md visible-lg">
+                            <i class="fa fa-file-text"></i>
+                            <i class="fa fa-download" data-toggle="modal" data-target=".modal-download-links"></i>
+                        </span>
+                    </div>
+                    <div class="detail-tab detail-tab-video-data">
+                        <div class="metadata">
+                            <span>Datum:</span>
+                            <span>10.12.2015</span>
+                            <span>| Views:</span>
+                            <span>19</span>
+                        </div>
+                        <h1 class="video-title">
+                            50 Years of electronica
+                        </h1>
+
+                        <div class="description">
+                            <p>"Inside tomorrow" -- electronica has been presenting the electronics trends of the future for 50 years. It quickly developed into an absolute must for industry representatives where pioneers both then and now present groundbreaking developments. It has always been focused on the future, giving participants a comprehensive look at the international electronics industry. Electronics has always been a driving force in our daily lives. That makes electronica the place where technologies and innovations that change and affect our lives originate. electronica is THE international platform for business relationships and a gathering for all relevant media. It is the only event of its kind that provides a complete overview of the market. No other event depicts the electronics industry as comprehensively as electronica -- from components and systems to applications and services.</p>
+                            <p class="keywords">
+                                <span>Schlagwörter:</span>
+                                <a href="#">Messe Muenchen</a>
+                                <a href="#">Trade fair</a>
+                                <a href="#">e-mobility</a>
+                            </p>
+                        </div>
+                        <div class="more-information-expand hide"><i
+                                class="fa fa-angle-down"></i><span>{{ 'detail.more.expand' | trans }}</span></div>
+                        <div class="more-information-collapse hide"><i
+                                class="fa fa-angle-up"></i><span>{{ 'detail.more.collapse' | trans }}</span></div>
+                    </div>
+                    <div class="detail-tab detail-tab-video-embed hide">
+                        <div class="text-right">
+                            <i class="fa fa-close"></i>
+                        </div>
+                        <div class="clearfix">
+                            <div class="pull-left boxes-size">
+                                <div class="size-box size1 active"
+                                     data-width="{{ size[0] }}" data-height="{{ size[1] }}">
+                                    <div class="text-center">512 x 513</div>
+                                    <div class="box-image">
+                                        <img src="/img/Bildmarke_white.png"/>
+                                    </div>
+                                </div>
+                                <div class="size-box size2"
+                                     data-width="{{ size[0] }}" data-height="{{ size[1] }}">
+                                    <div class="text-center">640 x 385</div>
+                                    <div class="box-image">
+                                        <img src="/img/Bildmarke_white.png"/>
+                                    </div>
+                                </div>
+                                <div class="size-box size3"
+                                     data-width="{{ size[0] }}" data-height="{{ size[1] }}">
+                                    <div class="text-center">720 x 430</div>
+                                    <div class="box-image">
+                                        <img src="/img/Bildmarke_white.png"/>
+                                    </div>
+                                </div>
+                                <div class="size-box size4"
+                                     data-width="{{ size[0] }}" data-height="{{ size[1] }}">
+                                    <div class="text-center">1280 x 745</div>
+                                    <div class="box-image">
+                                        <img src="/img/Bildmarke_white.png"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pull-left  user-size">
+                                <p>Benutzerdefinierte Größe</p>
+
+                                <div>
+                                    <span>Breite</span>
+                                    <input type="text" name="width" class="user-width">
+                                    <span>px</span>
+                                </div>
+                                <div>
+                                    <span>Höhe</span>
+                                    <input type="text" name="height" class="user-height" disabled="disabled">
+                                    <span>px</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="embed-link">
+                            <h3>Embedlink</h3>
+                            <textarea class="embed-code-text" spellcheck="false" readonly="readonly" data-controlbar-heightHeight="{{ playerControlbarHeight }}"><div style="width:512px;height:313px"><div mi24-video-player video-id="2MwTSokwihgR6GhQpUYYjY" player-id="BCtEJVehoSSnNCkqCqFAvb" config-type="vmpro" flash-path="//e.video-cdn.net/v2/" api-url="//d.video-cdn.net/play"></div><script src="//e.video-cdn.net/v2/embed.js"></script></div></textarea>
+                        </div>
+                    </div>
+                </section>
+                <h3 class="nextVideosTitle">Weitere Videos zur drinktec</h3>
+                <section class="video-carousel" data-url="/de/async/2264" data-total="4">
+                    <div class="clearfix videos-wrapper" style="width: 929px; left: 0px;">
+                        <figure class="video" data-video-id="A6mF7HFUW-FwwHti-DNfZ8">
+                            <a href="/de/detail/A6mF7HFUW-FwwHti-DNfZ8">
+                                <img class="img-responsive" src="//i.video-cdn.net/ARn5ZCSnSxoBEz6gA6JDAm/A6mF7HFUW-FwwHti-DNfZ8.5000.thumbnail.JPEG"/>
+                                <div class="play-button"></div>
+                            </a>
+                            <div>
+                                <a href="/de/detail/A6mF7HFUW-FwwHti-DNfZ8">
+                                    <h3>drinktec TV - September 17, 2013</h3>
+                                </a>
+                                <time>10.12.2015</time>
+                                <div class="views">
+                                    <span>Views:</span>
+                                    <span>10</span>
+                                </div>
+                            </div>
+                        </figure>
+                        <figure class="video" data-video-id="5zey_nRTTmm8aBXwuFHKP1">
+                            <a href="/de/detail/5zey_nRTTmm8aBXwuFHKP1">
+                                <img class="img-responsive" src="//i.video-cdn.net/-g3ATcikPhJaFdLp_Y6fPR/5zey_nRTTmm8aBXwuFHKP1.5000.thumbnail.JPEG"/>
+                                <div class="play-button"></div>
+                            </a>
+                            <div>
+                                <a href="/de/detail/5zey_nRTTmm8aBXwuFHKP1">
+                                    <h3>drinktec TV - September 18, 2013</h3>
+                                </a>
+                                <time>10.12.2015</time>
+                                <div class="views">
+                                    <span>Views:</span>
+                                    <span>23</span>
+                                </div>
+                            </div>
+                        </figure>
+                        <figure class="video" data-video-id="3PMdiwphPe3ZmQy5e2GJFo">
+                            <a href="/de/detail/3PMdiwphPe3ZmQy5e2GJFo">
+                                <img class="img-responsive" src="//i.video-cdn.net/EMoL6kNMLvSU7zJM1U-Fyz/3PMdiwphPe3ZmQy5e2GJFo.5000.thumbnail.JPEG"/>
+                                <div class="play-button"></div>
+                            </a>
+                            <div>
+                                <a href="/de/detail/3PMdiwphPe3ZmQy5e2GJFo">
+                                    <h3>drinktec TV - September 19, 2013</h3>
+                                </a>
+                                <time>10.12.2015</time>
+                                <div class="views">
+                                    <span>Views:</span>
+                                    <span>0</span>
+                                </div>
+                            </div>
+                        </figure>
+                        <figure class="video" data-video-id="2PY6qZobEVxqpfWCi8r7Ur">
+                            <a href="/de/detail/2PY6qZobEVxqpfWCi8r7Ur">
+                                <img class="img-responsive" src="//i.video-cdn.net/9xRKJ19ds99MMsDvEymfq8/2PY6qZobEVxqpfWCi8r7Ur.5000.thumbnail.JPEG"/>
+                                <div class="play-button"></div>
+                            </a>
+                            <div>
+                                <a href="/de/detail/2PY6qZobEVxqpfWCi8r7Ur">
+                                    <h3>drinktec TV - September 20, 2013</h3>
+                                </a>
+                                <time>10.12.2015</time>
+                                <div class="views">
+                                    <span>Views:</span>
+                                    <span>1</span>
+                                </div>
+                            </div>
+                        </figure>
+                    </div>
+                    <i class="fa fa-angle-left slide-left"></i>
+                    <i class="fa fa-angle-right slide-right"></i>
+                </section>
+            </div>
+            <div class="col-sm-12 col-md-3">
+                <div class="contact">
+                    <div class="contact-header">
+                        <h3>Kontaktieren Sie uns!</h3>
+                        <p>Gerne nehmen wir Ihre Fragen und Anregungen entgegen.</p>
+                    </div>
+                    <div class="contact-body">
+                        <div class="vcard">
+                            <div class="org">Messe München GmbH</div>
+                            <div class="adr">
+                                <div class="street-address">Messegelände</div>
+                                <span class="postal-code">81823</span> <span class="region">München</span>
+                            </div>
+                            <div>Tel.: <span class="tel">+49 89 949-20720</span></div>
+                            <div>Fax: <span class="fax">+49 89 949-20729</span></div>
+                            <div>Email: <span class="email"><a href="mailto:info@messe-muenchen.de">info@messe-muenchen.de</a></span></div>
+                        </div>
+                    </div>
+                    <div class="contact-footer">
+                        <ul>
+                            <li>
+                                <a href="#" data-toggle="modal" data-target=".modal-message-formular">Nachricht schreiben</a>
+                            </li>
+                            <li>
+                                <a href="#" download="">Kontakt speichern</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="social-recommendation">
+            <p>Seite empfehlen</p>
+            <ul class="nav nav-horizontal">
+                <li><a href="#"><i class="fa fa-lg fa-facebook-square"></i></a></li>
+                <li><a href="#"><i class="fa fa-lg fa-twitter-square"></i></a></li>
+                <li><a href="#"><i class="fa fa-lg fa-google-plus-square"></i></a></li>
+                <li><a href="#"><i class="fa fa-lg fa-linkedin-square"></i></a></li>
+                <li><a href="#"><i class="fa fa-lg fa-xing-square"></i></a></li>
+                <li><a href="#"><i class="fa fa-lg fa-envelope-square"></i></a></li>
+            </ul>
+        </div>
+        <div class="placeholder full-width-bars-right"></div>
+        <div class="footer-nav">
+            <div class="row">
+                <div class="col-sm-12 col-md-4">
+                    <p><a><i class="fa fa-angle-left"></i> Zur Messe München Homepage</a></p>
+                </div>
+                <div class="col-sm-12 col-md-8">
+                    <ul class="nav nav-horizontal nav-grey">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Messages</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script type="text/javascript" src="/js/scripts.js"></script>
+</body>
+</html>
